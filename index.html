@@ -82,9 +82,28 @@
 
     <a href="mailto:asogwajoshua67@gmail.com">
       📧 Email Me
-    </a>
+    </a> 
+    <a href="#" onclick="saveContact()">
+  📲 Save Contact
+</a>
 
   </div>
+  <script>
+function saveContact() {
+  const contact = `BEGIN:VCARD
+VERSION:3.0
+FN:Joshboy
+TEL:+2349136558372
+EMAIL:asogwajoshua67@gmail.com
+END:VCARD`;
+
+  const file = new Blob([contact], { type: "text/vcard" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(file);
+  link.download = "Joshboy.vcf";
+  link.click();
+}
+</script>
 
 </body>
 </html>
