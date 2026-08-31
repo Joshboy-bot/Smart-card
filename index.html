@@ -72,6 +72,29 @@
   a:hover {
     background: #1d4ed8;
   }
+      a,
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a:active,
+button:active {
+  transform: scale(0.97);
+}
+
+button {
+  display: block;
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
 </style>
 </head>
 
