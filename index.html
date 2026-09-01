@@ -160,6 +160,20 @@ END:VCARD`;
   link.click();
 }
 </script>
+    
+    <script>
+function shareCard() {
+  if (navigator.share) {
+    navigator.share({
+      title: "Joshboy's Smart Card",
+      text: "Check out my Smart Card!",
+      url: "https://joshboy-bot.github.io/Smart-card/"
+    });
+  } else {
+    alert("Copy this link: https://joshboy-bot.github.io/Smart-card/");
+  }
+}
+</script>
   
 
 </body>
